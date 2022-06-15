@@ -1,0 +1,90 @@
+.banner-Robin{
+    background-image: url(../imagens/contatoheader.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1920px;
+    height: 1068px;
+    
+}
+
+.banner-image-title{    
+    width: 550px;
+    height: 300px;
+    position: relative;
+    left: 330px;
+    top: 500px;
+}
+
+.contato-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-list::after{
+    display: block;
+    margin-top: 3px;
+    content: ' ';
+    width: 95px;
+    height: 4px;
+    background-color: #fc3836;
+}
+
+.header-logo{
+    display: flex;
+    width: 21vh;
+    height: 10vh;
+    position: relative;
+    top: 24px;
+    left: 24px;
+}
+
+.header-logo img{
+    width: 100%;
+}
+
+.header ul{
+    list-style: none;
+}
+
+.header ul a{
+    color: white;
+}
+
+.header-items{
+    font-size: 35px;
+}
+
+.header-nav-list{
+    display: flex;
+    font-size: 35px;
+    gap: 80px;
+    margin-left: 300px;
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 768px){
+    .banner-Robin{
+        background-image: url(../imagens/contatoheader_mobile.jpg);
+        width: 768px;
+        height: 855px;
+    }
+
+    .banner-image-title{
+        opacity: 0;
+    }
+
+    .header-logo{
+        width: 18vh;
+        height: 10vh;
+        margin: auto;
+        
+    }
+
+    .header-nav-list{
+        margin: 50px auto;
+        gap: 60px;
+        padding: 0 10rem;
+    }
+}

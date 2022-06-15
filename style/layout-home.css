@@ -1,0 +1,179 @@
+.quem-somos{
+    background-image: url(../imagens/thor_header.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 120vh;
+    width: 1920px;
+}
+
+.title-quem-somos{
+    font-family:Montserrat;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    padding-top: 80px;
+    justify-content: center;
+    color: #fff;
+    margin: auto;
+}
+
+.title-quem-somos::after{
+    display: block;
+    margin: 20px 0;
+    content: ' ';
+    width: 250px;
+    height: 6px;
+    background-color: #fff;  
+}
+
+.text-quem-somos{
+    font-family:Montserrat;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin-left: 55%;
+    margin-top: 80px;
+}
+
+.area-catalogo{
+    background-color: #fff;
+}
+
+.title-catalogo{
+    font-family:Montserrat;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    justify-content: center;
+    color: black;
+    margin: auto;
+}
+
+.title-catalogo::after{
+    display: block;
+    margin-top: 10px;
+    content: ' ';
+    width: 250px;
+    height: 6px;
+    background-color: #fc3836;
+}
+
+.div-catalogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.image-bonecos-catalogo{
+    width: 100%;
+    height: 100%;
+}
+
+
+.text-catalogo{
+    font-family:Montserrat;
+    font-weight: bold;    
+    font-size: 36px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-right: 30px;
+}
+
+.button-outlined-catalogo{
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+    background-color: #fc3638;
+    border: 15px solid #fc3638;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.button-outlined-catalogo:hover{
+    background-color: #fe7467;
+    border: 15px solid #fe7467;
+}
+
+.button-catalogo{
+    display: block;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+    .quem-somos{
+        background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+        height: 100%;
+        width: 768px;
+        padding-bottom: 80px;
+    }
+
+    .title-quem-somos{
+        font-size: 35px;
+    }
+
+    .text-quem-somos{
+        text-align: center;
+        font-size: 30px;
+        width: 600px;
+        margin: auto;
+        padding-top: 60px;
+    }
+    
+    .div-catalogo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .title-catalogo{
+        font-size: 35px;
+        margin-top: 80px;
+    }
+
+    .title-catalogo::after{
+        width: 200px;
+    }
+
+    .text-catalogo{
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        font-size: 30px;
+        margin: auto;
+        
+    }
+
+    .image-bonecos-catalogo{
+        width: 80vh;
+        height: 60vh;
+        display: flex;
+        margin: auto;
+    }
+
+    .text-catalogo button{
+        margin-top: 80px;
+    }
+    
+    .button-catalogo{
+        font-size: 28px;
+        border: 4px solid #fc3638;
+    }
+
+    .button-outlined-catalogo{
+       margin: auto;
+    }
+}
+
